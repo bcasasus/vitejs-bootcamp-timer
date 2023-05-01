@@ -1,0 +1,52 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  padding: 15px;
+  flex-direction: column;
+  text-align: center;
+  animation-duration: 1.75s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: backwards;
+  animation-name: animate-glow;
+  animation-timing-function: ease;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.highlight__text {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 400px) {
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    padding: 1em;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .title {
+    flex-direction: row;
+    gap: 0.5em;
+    font-size: 3em;
+  }
+  .highlight {
+    gap: 0.5em;
+  }
+  .highlight__text {
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
